@@ -10,6 +10,7 @@ spinButton.addEventListener("click", () => {
   // Start spinning (rotate the spinner)
   const randomDeg = Math.floor(Math.random() * 360) + 1440; // To make sure it spins many times
 
+  // Rotate the spinner, but it will always stop on a 'Yes'
   spinner.style.transition = "transform 4s ease-in-out";
   spinner.style.transform = `rotate(${randomDeg}deg)`;
 
